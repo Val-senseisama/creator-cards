@@ -30,6 +30,8 @@ const schemaConfig = {
   status: { type: SchemaTypes.String, index: true },
   access_type: { type: SchemaTypes.String, default: 'public' },
   access_code: { type: SchemaTypes.String },
+  created: { type: SchemaTypes.Number },
+  updated: { type: SchemaTypes.Number },
 };
 
 const modelSchema = new ModelSchema(schemaConfig, { collection: modelName });
